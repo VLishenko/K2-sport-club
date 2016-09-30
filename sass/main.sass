@@ -27,16 +27,15 @@ body textarea:required:valid
 	color: green
 
 html, body
-	overflow-x: hidden
 	height: 100%
 	-webkit-overflow-scrolling: touch
 	height: 100%
-
+	min-width: 320px
+html
+	font-size: 62.5%
 *
 	margin: 0
 	padding: 0
-.hidden
-	display: none
 
 a:hover,
 a:visited,
@@ -44,648 +43,396 @@ a:link,
 a:active 
 	text-decoration: none
 a
-	outline: none !important
+	outline: none
 body
 	background-color: #fff
+	font-family: "HelveticaNeueCyr-Roman"
 h1
 	padding: 0
 	margin: 0
-//Footer Down The Page
-
-html,
-body 
-	height: 100%
-
-div.float-left
-	float: left
-
-.wrapper
+.hidden
+	display: none !important
+//Header
+.main-header
 	position: relative
-	min-height: 100%
-
-	// height: 100%
-	// width: 100%
-	// display: inline-block
-.content 
-	// padding-bottom: 160px
-	padding-bottom: 280px
-
-	// box-sizing: border-box
-	// min-height: 100%
-	// width: 100%
-	// padding-bottom: 160px
-	// display: inline-block
-.footer 
-	position: absolute
-	left: 0
-	bottom: 0
-	width: 100%
-	height: 160px
-
-	// height: 160px
-	// margin-top: -160px
-
-
-//Common Heaer
-.header
-	width: 100%
-	height: 80px
-	border-bottom: 1px solid #2c3a42
-	+box-shadow ( 0, 1px, 1px, rgba(39, 39, 39, 0.1) )
-	
-	&__logo
-		padding-top: 29px
-		img
-			width: 142px
-			height: 26px
-	
-	&__nav
-		float: right
-		padding-top: 29px
-		padding-right: 20px
-		text-transform: uppercase
-		font-size: 18px
-		font-family: "RobotoCondensed"
-		li
-			display: inline-block
-			margin-left: 37px
-		a
-			color: #2b3a42
-			padding-bottom: 6px
-			border-bottom: 3px solid transparent
-			&:hover
-				border-bottom: 3px solid #e74c3c
-	&__nav-languale
-		margin-top: 79px
-		margin-right: 18px
-
-//Hidden Navigation
-.hidden-nav
-	&__btn
-		width: 42px
-		height: 42px
-		margin-top: 10px
-		border: 1px solid #2c3a42
-		text-transform: uppercase
-		font-size: 12px
-		float: right
-		+bdr(5px)
-		a
-			display: inline-block
-			padding: 12px 5px
-			color: #2c3a42
-
-//Hidden Navigation List
-.hidden-nav-list-wrap 
-	width: 100%
-	min-width: 280px
-	position: relative
-	min-height: 360px
-	height: 100vh
-
-.hidden-nav-list
-	padding-top: 114px
-	ul
-		margin: 0
-		padding: 0
-		list-style-type: none
-		text-align: center
-		text-transform: uppercase
-		font-size: 16px
-		font-family: "RobotoCondensed-Light"
-		letter-spacing: -0.6px
-		li
-			margin-bottom: 23px
-		li
-			&:nth-child(1) a
-				+animation-duration(.8s)
-			&:nth-child(2) a
-				+animation-duration(1s)		
-			&:nth-child(3) a
-				+animation-duration(1.3s)
-			&:nth-child(4) a
-				+animation-duration(1.8s)
-
-		a
-			color: #2b3a42
-			padding-bottom: 6px
-			border-bottom: 3px solid transparent
-			+transition(all 0.3s ease)
-
-			&:hover
-				border-bottom: 3px solid #e74c3c
-	&__btn
-		a 
-			padding: 5px 3px
-			font-size: 22px
-			color: #2c3a42
-.hidden-nav-list-language
-	display: inline-block
-	font-family: "VisitorTT2BRK"
-	font-size: 18px
-	color: #2c3a42
-	text-transform: uppercase
-	position: absolute
-	top: 0px
-	right: 0px
-	height: 31px
-	width: 34px
-	background: url(../img/languale-figure.png) no-repeat top left
-	cursor: pointer
-	z-index: 3
-	span
-		padding: 0px 4px
-.hidden-nav-list-img
-	position: absolute
-	bottom: 0
-	left: 0
-	z-index: -1
-
-//Сontacts
-.content-header
-	position: relative
-	display: inline-block
-	vertical-align: middle
-	height: 128px
-	width: 100%
-	&__title
-		position: absolute
-		top: 0px
-		left: 0px
-		margin-top: 16px
-		text-transform: uppercase
-		font-size: 146px
-		color: #f5f5f5
-		font-family: "GothamPro"
-		line-height: 128px
-		letter-spacing: -3px
-		z-index: -1
-
-//Map
-.map-wrapper
-	height: 646px
-	width: 100%
-	display: inline-block
-	margin-top: -12px
-.map
-	display: inline-block
-	position: relative
-	width: 100%
-	height: 646px
-.map-large
-	width: 100%
-	height: 646px
-
-.map-description
-	position: absolute
-	padding-top: 200px
-	top: 0px
-	right: 0px
-	width: 576px
-	text-align: center
-	background-color: rgba(245, 245, 245, 0.8)
-	height: 100%
-	color: #2c3a42
-	font-size: 18px
-	&__name
-		color: #2c3a42
-		font-size: 25px
-		text-transform: uppercase
-		font-family: "GothamPro"
-		margin-top: 22px
-	&__adress
-		font-family: "RobotoRegular"
-		margin-top: 23px
-
-	&__mail
-		margin-top: 15px 
-		font-family: "RobotoRegular"
-		a
-			color: #e74c3c
-			font-size: 18px
-			text-decoration: underline
-	&__phone
-		margin-top: 16px
-		font-family: "RobotoMedium"
-
-//Client
-.clients-wrapper
-	margin-top: 31px 
-	a
-		width: 100%
-		display: inline-block
-
-.img-filter 
-	text-align: center
-	filter: gray /* For IE6-9 */
-	filter: grayscale(1) /* For Microsoft Edge and Firefox 35+ */
-	-webkit-filter: grayscale(1) /* For Google Chrome, Safari 6+ & Opera 15+ */
-	+transition(all 0.3s ease)
-/* Now disable grayscale on hover */
-.img-filter:hover 
-	filter: none
-	-webkit-filter: grayscale(0)
-
-.spacer
-	content: ''
-	display: inline-block
-	height: 96px
-	width: 100%
-	clear: both
-
-//Portfolio Inner
-.portfolio-inner-name
-	position: relative
-	display: inline-block
-	color: #2c3a42
-	font-family: "RobotoCondensed"
-	font-size: 25px
-	text-transform: uppercase
+	height: 85px
+	z-index: 10
+.logo
 	text-align: right
-	width: 100%
-	height: 128px	
-
-	p
+	+transition (all 0.4s ease)
+	a
+		margin-right: 34px
+	&__position
+		margin-top: 7px
+.menu
+	&__width
+		width: 100%
+		max-width: 500px
 		position: absolute
-		right: 0
-		bottom: 0
-		margin-bottom: 18px
+		+transition (all 0.4s ease)
+		
+	&--list
+		position: relative
+		width: 100%
+		text-align: justify
+		&:after 
+			content: ''
+			display: inline-block
+			width: 100%
+		li
+			display: inline-block
+			vertical-align: top
+			a
+				text-align: center
+				text-decoration: none
+				color: #4a6dcf
+				padding-bottom: 10px
+				font-size: 23px
+				&:hover 
+					.menu--icon__position
+						margin-top: 8px
+	&--icon
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center 
+		width: 86px
+		height: 85px
+		margin: auto
+		background-color: #fefefe
+		border-radius: 15px
+		box-shadow: 2px 3.5px 3.8px 0.2px rgba(0, 0, 0, 0.33)
+		+transition (all 0.4s ease)
+		&__position
+			margin-top: 5px
+		i[class *= "ic-"] 
+			display: inline-block
+			content: ''
+			background-image: url(../img/top-menu-icons.png)
+			width: 37px
+			height: 40px
+		.ic-shirt-pattern
+			background-position: 0 0
+		.ic-delivery
+			background-position: -37px 0 
+		.ic-warranty-card
+			background-position: -74px 0 
+		.ic-comments
+			background-position: -111px 0
 
-.back-btn 
-	i
-		position: absolute
-		transform: rotateY(180deg)
-		font-size: 30px
-		color: #2c3a42
-		margin-top: 2px
+.order-button
+	display: table
+	+transition (all 0.4s ease)
 
-	span
-		margin-left: 43px
-		font-size: 18px
-		color: #2c3a42
-	&:hover span
-		border-bottom: 1px solid #e74c3c
-
+	&--link
+		display: table-cell
+		vertical-align: middle
+		width: 178px
+		height: 93px
+		background: linear-gradient(to top, #4c851f 0%, #4c851f 42%, #65b029 66%, #85ea37 100%)
+		border: 5px solid #fdfcfc
+		border-radius: 16px
+		text-align: center
+		vertical-align: middle
+		+transition (all 0.4s ease)
+		span
+			color: #fff
+			font-family: BebasNeueCyrillic
+			font-size: 38px
+			font-weight: 400
+			letter-spacing: 2px
+			+transition (all 0.4s ease)
+		&:hover
+			margin-top: 36px
 	&__position
 		position: absolute
-		left: 0
-		top: 0
-		margin-top: 76px
-
-.portfolio-inner-video-wrap
-	width: 100%
-	// height: 646px
-	margin-top: -10px
-
-.portfolio-inner-video
-	position: relative
-	display: inline-block
-	&__logo
-		position: absolute
-		width: 350px
-		height: 100px
-		left: 0
-		top: 0
-		img
-			float: left
-			width: 53px
-			height: 75px
-			margin-top: 12px
-			margin-left: 14px
-	.video-block
-		width: 100%
-		height: auto
-
-	&__name
-		font-size: 20px
-		color: #039cce
-		font-family: "ArialRoundedMTBold"
-		margin-top: 12px
 		display: inline-block
-		margin-left: 10px
-		span
-			display: block
-			font-size: 14px
-			margin-left: 30px
-
-.portfolio-inner-descr
-	font-size: 18px
-	font-family: "RobotoMedium"
-	margin-top: 111px
-	margin-left: 10px
-	&__title
-		text-transform: uppercase
-		font-size: 25px
-		font-family: "RobotoCondensed"
-	.regular-font
-		font-family: "RobotoRegular"
-	ul
-		list-style-type: none
-		margin-top: 9px
-		li
-			margin-bottom: 18px
-
-//Portfolio All
-.portfolio-types-wrapper
-	@extend .portfolio-inner-name
-
-.portfolio-types 
-	margin-right: 20px
-	margin-top: 48px
-	position: relative
-	li:first-child
-		a
-			position: absolute
-			top: 0
-			right: 0
-			display: inline-block
-			position: relative
-			width: 30px
-			height: 26px
-			font-size: 25px
-			color: #e74c3c
-
-			&:hover
-				border-bottom: 3px solid transparent
-		i
-			position: absolute
-			left: 0px
-			top: 0px
-			margin-top: 4px
-			margin-left: -2px
-		
-	li
-		display: inline-block
-		text-transform: none
-		font-size: 18px
-		margin-left: 36px
-	a
-		color: #2c3a42
-		padding-bottom: 8px
-		border-bottom: 3px solid transparent
-		&:hover
-			border-bottom: 3px solid #e74c3c
-
-ul
-	.active-page,
-	.active
-		a
-			border-bottom: 3px solid #e74c3c
-
-.portfolio-all-works 
-	margin-top: -18px
-
-.item-masonry 
-	position: relative
-	img
-		padding: 5px
-		display: block
-		width: 100%
-		height: auto
-
-
-.portfolio-img-hover
-	display: inline-block
-	width: 100%
-	height: 100%
-	position: absolute
-	top: 0
-	right: 0
-	padding: 5px
-	font-size: 25px
-	text-transform: uppercase
-	font-family: "RobotoCondensed"
-	&:hover a
-		opacity: 1
-	a
-		display: inline-block
-		width: 100%
-		height: 100%
-		padding: 0px 30px
-		padding-top: 31%
-		text-align: center
-		color: #fff
-		background-color: rgba(0, 0, 0, .5)
-		line-height: 29px
-		opacity: 0
-		+transition(all 0.3s ease)
-	&:hover a
-	&--sm a:before
-		content: ''
-		width: 20px
-		height: 20px
-		position: absolute
-		right: 5px
-		top: 5px
-		border: 0px solid transparent
-		border-top: 0px solid transparent
-		border-right: 0px solid transparent
-		+transition(all .2s ease)
-	&--sm:hover a:before
-		border: 20px solid transparent
-		border-top: 20px solid #fff
-		border-right: 20px solid #fff
-
-	&--sm a:after
-		content: ''
-		width: 20px
-		height: 20px
-		position: absolute
-		left: 5px
-		bottom: 5px
-		border: 0px solid transparent
-		border-bottom: 0px solid transparent
-		border-left: 0px solid transparent
-		+transition(all .2s ease)
-	&--sm:hover a:after
-		border: 20px solid transparent
-		border-bottom: 20px solid #fff
-		border-left: 20px solid #fff
-
-	&--lg a:before
-		content: ''
-		width: 45px
-		height: 45px
-		position: absolute
-		left: 5px
-		top: 5px
-		border: 0px solid transparent
-		border-left: 0px solid transparent
-		border-top: 0px solid transparent
-		+transition(all .2s ease)
-
-	&--lg:hover a:before
-		border: 45px solid transparent
-		border-left: 45px solid #fff
-		border-top: 45px solid #fff
-	&--lg a
-		padding-top: 46%
-
-	&--lg a:after
-		content: ''
-		width: 45px
-		height: 45px
-		position: absolute
-		right: 5px
-		bottom: 5px
-		border: 0px solid transparent
-		border-right: 0px solid transparent
-		border-bottom: 0px solid transparent
-		+transition(all .2s ease)
-
-	&--lg:hover a:after
-		border: 45px solid transparent
-		border-right: 45px solid #fff
-		border-bottom: 45px solid #fff
-
-//Home Page
-.home-page
-	display: block
-	height: 100vh
-	min-height: 440px
-	width: 100%
-	color: #fff
-	background: url(../images/home-bg.jpg) no-repeat center
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-o-background-size: cover
-	background-size: cover
-		
-.home
-	.hidden-nav__btn
-		border: 1px solid #fff
-	.header
-		position: absolute
-		top: 0
-		left: 0
-		border-bottom: none
-		-webkit-box-shadow: none
-		-moz-box-shadow: none
-		box-shadow: none
-		z-index: 3
-		background-color: rgba(255, 255, 255, .15)
-		a
-			color: #fff
-	.hidden-nav-list-language
-		color: #fff
-		background: url(../img/home-languale-figure.png) no-repeat top left
-	.content
-		padding-bottom: 0
-	
-	.footer
-		background-color: transparent
-		height: 115px
-		&::before
-			display: none
-	
-		.container
-			background-color: transparent
-
-	.footer__wrapper
-		text-align: center
-		height: 115px
-	.footer__copy
-		color: #fff
-	.home-footer-mail
-		color: #e74c3c
-		text-decoration: underline
-		font-family: "RobotoRegular"
-		font-size: 18px
-		+transition(all 0.3s ease)
-		&:hover
-			color: #fff
-	.home-footer-phone
-		font-size: 18px
-		color: #fffefe
-		font-family: "RobotoMedium"
-		margin-top: 15px
-
-	.pushy
-		display: block
-		color: #fff
-		background: url(../images/home-bg.jpg) no-repeat center
-		-webkit-background-size: cover
-		-moz-background-size: cover
-		-o-background-size: cover
-		background-size: cover
-
-	.hidden-nav-list-language
-		background: url(../img/home-languale-figure.png) no-repeat top left
-	.hidden-nav-list ul a
-		color: #fff
-
-	.hidden-nav-list-language
-		color: #fff
-	.hidden-nav-list__btn a
-		color: #fff
-.home-page-content
-	text-align: center
-	width: 100%
-	margin-top: 345px
-	+transition(all 0.3s ease)
-
-.home-logo
-	width: 283px
-	height: 240px
-	+transition(all 0.3s ease)
-.home-page-description
-	max-width: 370px
-	margin: auto
-	margin-top: 16px
-	font-size: 25px
-	line-height: 33px
-	color: #fff
-	font-family: "RobotoRegular"
-	+transition(all 0.3s ease)
-.home-page-potrfolio-btn
-	margin-top: 86px
-	a
-		display: inline-block
-		color: #fff
-		font-family: "RobotoCondensed"
-		font-size: 20px
-		font-weight: 400
-		text-transform: uppercase
-		width: 255px
-		height: 77px
-		border: 2px solid #fff
-		padding-top: 20px
-		+bdr (10px)
-		+transition(all 0.3s ease)
-		&:hover
-			color: #e74c3c
-			border-color: #e74c3c
-
-
-//Common Footer
-.footer
-	background-color: #e8e8e8
-	.container
-		background-color: #e8e8e8
-	&:before
-		position: absolute
-		top: 0
-		left: 0
-		display: inline-block
-		content: ''
-		height: 3px
-		width: 100%
-		background: #fff url(../img/footer-border.jpg) repeat-x center
-
-	&__wrapper
-		display: inline-block
-		width: 100%
-		height: 144px
-		text-align: right
-	&__copy
-		position: absolute
-		bottom: 0
+		margin-top: 33px
+		float: right
 		right: 0
-		font-size: 14px
-		text-transform: uppercase
-		color: #282828
+		+transition (all 0.4s ease)	
+		
+.hidden-navigation
+	&__position
+		float: right
+		margin-right: 12px
+		margin-top: 36px
+	&--btn
+		display: inline-block
+		content: ''
+		width: 51px
+		height: 51px
+		background-image: url(../img/hidden-nav-btn.png)
 
+.hidden-navigation-list
+	display: none
+	list-style: none
+	border-top: 1px solid #dddcdb
+	background-color: #fff
+	&__position
+	position: absolute
+	top: 100px
+	left: 0
+	width: 100%
+	padding-top: 40px
+	padding-left: 22px
+
+	li
+		text-decoration: none
+		margin-bottom: 5px
+	a
+		color: #1760a6
+		font-family: "HelveticaNeueCyr-Bold"
+		font-size: 23px
+		font-weight: 700
+		line-height: 47px
+		letter-spacing: 1px
+
+//Slider
+.slider-wrap
+	width: 100%
+	max-width: 1294px
+	margin: auto
+.slider
+	div[class*="slider-item-"]
+		position: relative
+		width: 100%
+		height: 600px
 	
+	&-item-1
+		background-image: url(../images/Slider/Slider-1.jpg)
+		background-position: center
+		+transition (all 0.4s ease)
+	&--title
+		color: #fff
+		font-family: BebasNeueCyrillic
+		font-size: 74px
+		line-height: 74px
+		text-transform: uppercase
+		letter-spacing: 4px
+		&__position
+			margin-top: 98px
+			margin-left: 42px
+	&--p
+		max-width: 485px
+		color: #fff
+		font-family: HelveticaNeueCyr-Roman
+		font-size: 17px
+		line-height: 27px
+		text-transform: uppercase
+		letter-spacing: 0.5px
+		&__position
+			margin-top: 24px
+			margin-left: 48px
+	&--btn
+		a
+			display: inline-block
+			width: 139px
+			height: 36px
+			padding: 0 8px
+			background-color: #fefdfd
+			border-radius: 5px
+			color: #272828
+			font-family: OpenSansRegular
+			font-size: 15px
+			font-weight: 400
+			letter-spacing: 0px
+			line-height: 35px
+			text-transform: uppercase
+		&__position
+			margin-left: 50px
+			margin-top: 17px
 
 
+//Sections
+section
+	width: 100%
+	display: inline-block
+	vertical-align: top
+.section-title
+	font-family: "BebasNeueCyrillic"
+	color: #4e7bdc
+	text-align: center
+	font-weight: normal
+	font-size: 48px
+	text-transform: uppercase
+	margin-bottom: 6px
+	margin-top: 26px
+.section-descr
+	font-family: "HelveticaNeueCyr-Roman"
+	text-align: center
+	font-size: 30px
+	color: #353535
+
+//Specifics
+.specifics-items-wrap
+	margin-top: 30px
+	text-align: justify
+	&:after
+		content: ''
+		display: inline-block
+		width: 100%
+.specifics-item
+	display: inline-block
+	vertical-align: top
+	text-align: left
+	width: 275px
+	padding-right: 20px
+	font-family: "HelveticaNeueCyr-Roman"
+	&--name
+		color: #4e7bdc
+		font-size: 23px
+		&__position
+			margin-top: 26px
+	&--text
+		font-size: 19px
+		color: #353535
+		line-height: 29px
+		&__position
+			margin-top: 15px
+
+//Delivery
+.delivery 
+	background-color: #5089bb
+	padding-bottom: 5px
+
+.map-block
+	text-align: right
+	padding-right: 36px	
+
+.map-img
+	margin-right: 14px
+	margin-top: 17px
+.partners-img
+	margin-top: 11px
+.delivery-text
+	display: inline-block
+	color: #fff
+	font-family: BebasNeueCyrillic
+	font-size: 35px
+	letter-spacing: 3.6px
+	margin: 48px 0 23px 21px
+
+//Delivery Description
+.delivery-descr
+	background-color: #eee
+	&__wrap
+		text-align: justify
+		margin-top: 30px
+		&:after
+			content: ''
+			display: inline-block
+			width: 100%
+	&--item
+		text-align: center
+		display: inline-block
+		vertical-align: top
+		width: 260px
+		font-family: "HelveticaNeueCyr-Roman"
+		padding: 0px 5px
+		margin-bottom: 55px
+		p
+			text-align: left
+		.name
+			color: #4e7bdc
+			font-size: 23px
+			margin-top: 34px
+			margin-bottom: 19px
+			letter-spacing: 0.6px
+		.text
+			font-family: Helvetica
+			font-size: 19px
+			color: #353535
+
+//Order
+.order-wrap
+	padding-top: 212px
+.order
+	li
+		font-size: 2.2rem
+		margin-bottom: 10px
+		list-style: none
+		position: relative
+		display: block
+		min-height: 45px
+		padding-left: 60px
+
+.order-btn
+	display: table
+	margin: auto
+	z-index: 2
+	a
+		display: table-cell
+		vertical-align: middle
+		text-align: center
+		width: 449px
+		height: 96px
+		border-radius: 15px
+		border: 3px solid #fdfdfd
+		color: #fff
+		font-family: BebasNeueCyrillic
+		font-size: 52px
+		letter-spacing: 0.8px
+	&__green-col
+		background-image: linear-gradient(to top, #000 0%, #497f1e 3%, #68b72b 48%, #8bf539 86%, #8bf539 100%)
+	&__blue-col
+		background-image: linear-gradient(to top, #2c4990 0%, #456fbb 48%, #5f97e6 79%, #5f97e6 100%)
+
+.order-list
+	margin-top: 31px
+	margin-left: 66px
+	li
+		position: relative
+		margin-bottom: 20px
+	li:before
+		position: absolute
+		left: 0
+		top: 0
+		margin-top: -4px
+		display: inline-block
+		content: ''
+		width: 45px
+		height: 45px
+		background: url(../img/marks.jpg) no-repeat
+	&__green-col li:before
+		background-position: 0 0
+	&__blue-col li:before
+		background-position: -48px 0
+		z-index: 2
+
+.gift-wrap
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		display: inline-block
+		width: 207px
+		height: 249px
+		background-image: url(../img/gift.png)
+		left: 0
+		bottom: 0
+		margin-bottom: 14px
+		margin-left: 166px
+		z-index: -1
+.price
+	text-align: center
+	&--numb
+		font-size: 100px
+		font-family: "BebasNeueCyrillic"
+		padding-right: 10px
+	&--valute
+		font-size: 65px
+		font-family: "HelveticaNeueCyr-Roman"
+
+.payments
+	text-align: justify
+	&:after
+		content: ''
+		display: inline-block
+		width: 100%
+	img
+		display: inline-block
 
