@@ -78,6 +78,32 @@
 		margin: 22px 0 47px 10px;
 		letter-spacing: 2.2px;
 	}
+	.order-btn a {
+		width: 336px;
+		font-size: 48px;
+	}
+	.gift-wrap::after {
+		margin-left: 88px;
+	}
+	.order-list {
+		margin-left: 20px;	
+	}
+	.order li {
+		font-size: 19px;
+	}
+	.order-list li:before {
+		-webkit-transform: scale(0.85);
+		    -ms-transform: scale(0.85);
+		        transform: scale(0.85);
+	}
+	.payments--item {
+		width: 23%;
+	}
+	.gift-wrap::after {
+		-webkit-transform: scale(.86);
+		    -ms-transform: scale(.86);
+		        transform: scale(.86);
+	}
 
 }
 
@@ -148,6 +174,29 @@
 	.delivery-descr--item p {
 		text-align: center;
 	}
+	.payments {
+		text-align: center;
+	}
+	.payments--item {
+		width: auto;
+	}
+	.order {
+		padding-bottom: 650px;
+	}
+	.order-wrap {
+		padding-top: 59px;
+	}
+	.xs-position {
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 0px;
+	}
+	.gift-wrap::after {
+		margin-left: 36%;
+	}
+	.order-list {
+		padding-right: 7px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -162,6 +211,16 @@
 	.delivery-text {
 		font-size: 32px;
 		margin: 26px 0 0px 0;
+	}
+	.gift-wrap::after {
+		margin-left: 20%;
+	}
+	.order-btn a {
+		width: 310px;
+		font-size: 36px;
+	}
+	.order-list {
+		margin-left: 7px;
 	}
 }
 
