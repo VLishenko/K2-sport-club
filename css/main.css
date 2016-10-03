@@ -56,6 +56,7 @@ h1 {
 .logo {
   text-align: right;
   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
   transition: all 0.4s ease; }
   .logo a {
     margin-right: 34px; }
@@ -67,14 +68,14 @@ h1 {
   max-width: 500px;
   position: absolute;
   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
   transition: all 0.4s ease; }
-
 .menu--list {
   position: relative;
   width: 100%;
   text-align: justify; }
   .menu--list:after {
-    content: '';
+    content: "";
     display: inline-block;
     width: 100%; }
   .menu--list li {
@@ -88,38 +89,28 @@ h1 {
       font-size: 23px; }
       .menu--list li a:hover .menu--icon__position {
         margin-top: 8px; }
-
 .menu--icon {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 86px;
   height: 85px;
   margin: auto;
   background-color: #fefefe;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
-  -webkit-box-shadow: 2px 3.5px 3.8px 0.2px rgba(0, 0, 0, 0.33);
-          box-shadow: 2px 3.5px 3.8px 0.2px rgba(0, 0, 0, 0.33);
+  border-radius: 15px;
+  box-shadow: 2px 3.5px 3.8px 0.2px rgba(0, 0, 0, 0.33);
   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
   transition: all 0.4s ease; }
   .menu--icon__position {
     margin-top: 5px; }
   .menu--icon i[class*="ic-"] {
     display: inline-block;
-    content: '';
+    content: "";
     background-image: url(../img/top-menu-icons.png);
     width: 37px;
     height: 40px; }
@@ -135,21 +126,20 @@ h1 {
 .order-button {
   display: table;
   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
   transition: all 0.4s ease; }
   .order-button--link {
     display: table-cell;
     vertical-align: middle;
     width: 178px;
     height: 93px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#4c851f), color-stop(42%, #4c851f), color-stop(66%, #65b029), to(#85ea37));
-    background: -webkit-linear-gradient(bottom, #4c851f 0%, #4c851f 42%, #65b029 66%, #85ea37 100%);
     background: linear-gradient(to top, #4c851f 0%, #4c851f 42%, #65b029 66%, #85ea37 100%);
     border: 5px solid #fdfcfc;
-    -webkit-border-radius: 16px;
-            border-radius: 16px;
+    border-radius: 16px;
     text-align: center;
     vertical-align: middle;
     -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
     transition: all 0.4s ease; }
     .order-button--link span {
       color: #fff;
@@ -158,6 +148,7 @@ h1 {
       font-weight: 400;
       letter-spacing: 2px;
       -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
       transition: all 0.4s ease; }
     .order-button--link:hover {
       margin-top: 36px; }
@@ -168,16 +159,16 @@ h1 {
     float: right;
     right: 0;
     -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
     transition: all 0.4s ease; }
 
 .hidden-navigation__position {
   float: right;
   margin-right: 12px;
   margin-top: 36px; }
-
 .hidden-navigation--btn {
   display: inline-block;
-  content: '';
+  content: "";
   width: 51px;
   height: 51px;
   background-image: url(../img/hidden-nav-btn.png); }
@@ -213,13 +204,12 @@ h1 {
   position: relative;
   width: 100%;
   height: 600px; }
-
 .slider-item-1 {
   background-image: url(../images/Slider/Slider-1.jpg);
   background-position: center;
   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
   transition: all 0.4s ease; }
-
 .slider--title {
   color: #fff;
   font-family: BebasNeueCyrillic;
@@ -230,7 +220,6 @@ h1 {
   .slider--title__position {
     margin-top: 98px;
     margin-left: 42px; }
-
 .slider--p {
   max-width: 485px;
   color: #fff;
@@ -242,15 +231,13 @@ h1 {
   .slider--p__position {
     margin-top: 24px;
     margin-left: 48px; }
-
 .slider--btn a {
   display: inline-block;
   width: 139px;
   height: 36px;
   padding: 0 8px;
   background-color: #fefdfd;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   color: #272828;
   font-family: OpenSansRegular;
   font-size: 15px;
@@ -258,7 +245,6 @@ h1 {
   letter-spacing: 0px;
   line-height: 35px;
   text-transform: uppercase; }
-
 .slider--btn__position {
   margin-left: 50px;
   margin-top: 17px; }
@@ -288,7 +274,7 @@ section {
   margin-top: 30px;
   text-align: justify; }
   .specifics-items-wrap:after {
-    content: '';
+    content: "";
     display: inline-block;
     width: 100%; }
 
@@ -340,7 +326,7 @@ section {
     text-align: justify;
     margin-top: 30px; }
     .delivery-descr__wrap:after {
-      content: '';
+      content: "";
       display: inline-block;
       width: 100%; }
   .delivery-descr--item {
@@ -389,20 +375,15 @@ section {
     text-align: center;
     width: 449px;
     height: 96px;
-    -webkit-border-radius: 15px;
-            border-radius: 15px;
+    border-radius: 15px;
     border: 3px solid #fdfdfd;
     color: #fff;
     font-family: BebasNeueCyrillic;
     font-size: 52px;
     letter-spacing: 0.8px; }
   .order-btn__green-col {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(3%, #497f1e), color-stop(48%, #68b72b), color-stop(86%, #8bf539), to(#8bf539));
-    background-image: -webkit-linear-gradient(bottom, #000 0%, #497f1e 3%, #68b72b 48%, #8bf539 86%, #8bf539 100%);
     background-image: linear-gradient(to top, #000 0%, #497f1e 3%, #68b72b 48%, #8bf539 86%, #8bf539 100%); }
   .order-btn__blue-col {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#2c4990), color-stop(48%, #456fbb), color-stop(79%, #5f97e6), to(#5f97e6));
-    background-image: -webkit-linear-gradient(bottom, #2c4990 0%, #456fbb 48%, #5f97e6 79%, #5f97e6 100%);
     background-image: linear-gradient(to top, #2c4990 0%, #456fbb 48%, #5f97e6 79%, #5f97e6 100%); }
 
 .order-list {
@@ -417,7 +398,7 @@ section {
     top: 0;
     margin-top: -4px;
     display: inline-block;
-    content: '';
+    content: "";
     width: 45px;
     height: 45px;
     background: url(../img/marks.jpg) no-repeat; }
@@ -431,7 +412,7 @@ section {
   position: relative; }
   .gift-wrap:after {
     position: absolute;
-    content: '';
+    content: "";
     display: inline-block;
     width: 207px;
     height: 249px;
@@ -456,7 +437,7 @@ section {
   text-align: justify;
   font-size: 0; }
   .payments:after {
-    content: '';
+    content: "";
     display: inline-block;
     width: 100%; }
   .payments--item {
