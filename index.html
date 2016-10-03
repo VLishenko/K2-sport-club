@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="libs/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/fontello/css/fontello.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -34,41 +36,41 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-lg-5 col-md-4 col-sm-5 col-xs-4">
+				<div class="col-lg-4 col-md-3 col-sm-4 col-xs-4">
 					<div class="logo logo__position">
 						<a href="/">
-							<img src="img/logo.jpg" alt="">
+							<img src="img/logo.png" alt="">
 						</a>
 					</div>
 				</div>
 				
 				<!-- Start Header menu -->
-				<div class="col-lg-7 col-md-7 hidden-sm hidden-xs">
+				<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
 					<div class="menu menu__width">
 						<ul class="menu--list">
 							<li>
-								<a href="#">
+								<a href="#about-item">
 									<span class="">о комбезе</span>
 									<span class="menu--icon menu--icon__position"><i class="ic-shirt-pattern"></i></span>
 								</a>
 							</li>
 
 							<li>
-								<a href="#">
+								<a href="#delivery">
 									<span class="">доставка</span>
 									<span class="menu--icon menu--icon__position"><i class="ic-delivery"></i></span>
 								</a>
 							</li>
 
 							<li>
-								<a href="#">
+								<a href="#insurance">
 									<span class="">гарантии</span>
 									<span class="menu--icon menu--icon__position"><i class="ic-warranty-card"></i></span>
 								</a>
 							</li>
 
 							<li>
-								<a href="#">
+								<a href="#comments">
 									<span class="">отзывы</span>
 									<span class="menu--icon menu--icon__position"><i class="ic-comments"></i></span>
 								</a>
@@ -79,10 +81,10 @@
 				</div>
 				<!-- End Header menu -->
 
-				<div class="col-lg-2 col-md-3 col-sm-5 col-xs-6">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
 					<div class="order-button__position">
 						<div class="order-button">
-							<a href="#" class="order-button--link">
+							<a href="#order" class="order-button--link pop-up" >
 								 <span>заказ</span>
 							</a>
 						</div>
@@ -91,7 +93,7 @@
 
 				<div class="hidden-lg hidden-md col-sm-4 col-xs-4">
 					<div class="hidden-navigation hidden-navigation__position">
-						<a href="#" class="hidden-navigation--btn"></a>
+						<a href="#" class="hidden-navigation--btn" id="navigation-xs"></a>
 					</div>
 				</div>
 
@@ -99,24 +101,74 @@
 		</div> <!-- .container -->
 
 		<ul class="hidden-navigation-list hidden-navigation-list__position" id="hidden-navigation-list">
-			<li><a href="#">Главная</a></li>
-			<li><a href="#">О продукте</a></li>
-			<li><a href="#">Доставка</a></li>
-			<li><a href="#">Гарантии</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Контакты</a></li>
-			<li><a href="#">Купить</a></li>
+			<li><a href="/">Главная</a></li>
+			<li><a href="#about-item">О продукте</a></li>
+			<li><a href="#delivery">Доставка</a></li>
+			<li><a href="#insurance">Гарантии</a></li>
+			<li><a href="#comments">Отзывы</a></li>
+			<li><a href="#contacts">Контакты</a></li>
+			<li><a href="#order" class="pop-up">Купить</a></li>
 		</ul>
 	</header>
 	<!-- End Main Header -->
 
+	<div class="drop-down-nav hidden">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="logo logo__position">
+						<a href="/">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="order-button__position">
+						<div class="order-button">
+							<a href="#order" class="order-button--link pop-up" >
+								 <span>заказ</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<div class="hidden-navigation hidden-navigation__position">
+						<a href="#" class="hidden-navigation--btn" id="navigation-all"></a>
+					</div>
+				</div>
+			</div> <!-- .row -->
+
+			<ul class="hidden-navigation-list hidden-navigation-list__position" id="hidden-navigation-list-2">
+				<li><a href="/">Главная</a></li>
+				<li><a href="#about-item">О продукте</a></li>
+				<li><a href="#delivery">Доставка</a></li>
+				<li><a href="#insurance">Гарантии</a></li>
+				<li><a href="#comments">Отзывы</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+				<li><a href="#order" class="pop-up">Купить</a></li>
+			</ul>
+
+		</div> <!-- .container -->
+	</div>
+
 	<!-- Start Slider Block -->
 	<div class="slider-wrap">
 		<div class="slider">
+
+			<!-- Start Slider 1 -->
 			<div class="slider-item-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-6 col-sm-8 col-sm-offset-6">
+				<div class="container h100p">
+					<div class="row h100p">
+						
+						<div class="col-md-5 col-sm-5 col-sm-12h100p">
+							<div class="slider--image" >
+								<img src="images/Slider/Slider-1.png" alt="">
+							</div>
+						</div>
+
+						<div class="col-md-7 col-sm-7 col-xs-12 h100p">
 							<div class="slider--title slider--title__position hidden-xs">
 								Самый красивый и удобный комбез для фитнеса!
 							</div>
@@ -125,6 +177,11 @@
 								Мы отбираем для вас лучшие комбезы в мире, объединив их в серию товаров TERMINATRIX - "стиль и удобство"
 							</div>
 							
+
+							<div class="col-xs-12 visible-xs slider--xs-title">
+								красивый и удобный комбез для фитнеса
+							</div>
+
 							<div class="slider--btn slider--btn__position">
 								<a href="#">
 									<i class="icon-right-circled"></i>
@@ -137,11 +194,20 @@
 					</div> <!-- .row -->
 				</div> <!-- .container -->
 			</div>
+			<!-- End Slider 1 -->
 
+			<!-- Start Slider 2 -->
 			<div class="slider-item-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-6 col-sm-8 col-sm-offset-6">
+				<div class="container h100p">
+					<div class="row h100p">
+						
+						<div class="col-md-5 col-sm-5 col-sm-12h100p">
+							<div class="slider--image" >
+								<img src="images/Slider/Slider-1.png" alt="">
+							</div>
+						</div>
+
+						<div class="col-md-7 col-sm-7 col-xs-12 h100p">
 							<div class="slider--title slider--title__position hidden-xs">
 								Самый красивый и удобный комбез для фитнеса!
 							</div>
@@ -150,6 +216,11 @@
 								Мы отбираем для вас лучшие комбезы в мире, объединив их в серию товаров TERMINATRIX - "стиль и удобство"
 							</div>
 							
+
+							<div class="col-xs-12 visible-xs slider--xs-title">
+								красивый и удобный комбез для фитнеса
+							</div>
+
 							<div class="slider--btn slider--btn__position">
 								<a href="#">
 									<i class="icon-right-circled"></i>
@@ -162,26 +233,30 @@
 					</div> <!-- .row -->
 				</div> <!-- .container -->
 			</div>
+			<!-- End Slider 2 -->
 
 		</div>
 	</div>
 	<!-- End Slider Block -->
 
 	<!-- Start Specifics -->
-	<section class="specifics">
+	<section class="specifics" id="about-item">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-md-14">
+				<div class="col-md-12">
 					<h2 class="section-title">особенности комбеза от k2.fitness</h2>
 				</div>
 				
-				<div class="col-md-14">
+				<div class="col-md-12">
 					<p class="section-descr">Почему это лучший комбез по красоте, удобству и надежности?</p>
 				</div>
-				
-				<div class="col-md-14">
-					<div class="specifics-items-wrap">
+			</div>
+
+			<div class="row">
+				<div class="specifics-items-wrap">
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="specifics-item">
 							<img src="images/Specifics-item/1.jpg">
 							<p class="specifics-item--name specifics-item--name__position">K2Fit.ru: для красоты, комфорта и спорта</p>
@@ -189,7 +264,9 @@
 								То, что мы продаем на K2Fit.ru - мы действительно сами носим, тренируемся и поражаем своей красотой мужчин. В этой одежде действительно и удобно, и красиво одновременно!
 							</p>
 						</div>
-
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="specifics-item">
 							<img src="images/Specifics-item/2.jpg">
 							<p class="specifics-item--name specifics-item--name__position">К2Fit.ru: отобрано женщинами</p>
@@ -197,7 +274,9 @@
 								В интернете столько красивой, но бестолковой одежды! Мы находим и проверяем по всему миру десятки моделей,  но в среднем только 1 из 10 испытанных моделей одежды получает наше одобрение к продажам. Этим мы экономим ваше время и деньги!
 							</p>
 						</div>
-
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="specifics-item">
 							<img src="images/Specifics-item/3.jpg">
 							<p class="specifics-item--name specifics-item--name__position">К2Fit.ru: доставка, примерка и гарантия</p>
@@ -207,7 +286,9 @@
 								Кроме того, у нас 1000 пунктов выдачи по всей России (если не любите ждать курьера). 
 							</p>
 						</div>
-
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="specifics-item">
 							<img src="images/Specifics-item/4.jpg">
 							<p class="specifics-item--name specifics-item--name__position">К2Fit.ru: гарантия, возврат и клуб друзей</p>
@@ -225,11 +306,11 @@
 	<!-- End Specifics -->
 
 	<!-- Start Delivery BLock -->
-	<section class="delivery">
+	<section class="delivery" id="delivery">
 		<div class="container">
 			<div class="row">
 				
-				<div class="col-md-8 col-md-push-6 col-sm-7 col-sm-push-7 col-xs-14">
+				<div class="col-md-7 col-md-push-5 col-sm-6 col-sm-push-6 col-xs-12">
 					<p class="delivery-text">
 						доставка в 1800 городах <br>
 						800 пунктов выдачи
@@ -241,7 +322,7 @@
 				</div>
 
 
-				<div class="col-md-6 col-md-pull-8 col-sm-7 col-sm-pull-7 col-xs-14">
+				<div class="col-md-5 col-md-pull-7 col-sm-6 col-sm-pull-6 col-xs-12">
 					<div class="map-block">
 						<img src="img/delivery-bg.png" alt="" class="map-img">
 
@@ -258,21 +339,23 @@
 	<!-- End Delivery BLock -->
 
 	<!-- Start Delivery Description -->
-	<section class="delivery-descr">
+	<section class="delivery-descr" id="insurance">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-md-14">
+				<div class="col-md-12">
 					<h2 class="section-title">доставка, примерка, гарантия возврата </h2>
 				</div>
 
-				<div class="col-md-14">
+				<div class="col-md-12">
 					<p class="section-descr">Мы сделали для вас ЛУЧШУЮ систему доставки! </p>
 				</div>
+			</div>
 
-				<div class="col-md-14">
-					<div class="delivery-descr__wrap">
-
+			<div class="row">
+				<div class="delivery-descr__wrap">
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="delivery-descr--item">
 							<img src="images/Delivery-descr/delivety-descr-1.png">
 							<p class="name"> Доставка курьером в 1800 городах России </p>
@@ -281,7 +364,9 @@
 								Пять курьерских служб, 1700 городов. 
 							</p>
 						</div>
+					</div>
 
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="delivery-descr--item">
 							<img src="images/Delivery-descr/delivety-descr-2.png">
 							<p class="name">Примерка, несколько размеров на выбор</p>
@@ -289,7 +374,9 @@
 								Но вы можете и не мерить - если что-то не подошло - можно вернуть товар в течение 2 недель! И на это у вас не уйдет ни копейки - курьер приедет и заберет, деньги вернем. 
 							</p>
 						</div>
-
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="delivery-descr--item">
 							<img src="images/Delivery-descr/delivety-descr-3.png">
 							<p class="name"> 
@@ -300,7 +387,9 @@
 								Как уже отметили, товар можно вернуть в течение 2 недель, так что если удобнее не ждать курьера - для вас на выбор пункты самовывоза
 							</p>
 						</div>
-
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<div class="delivery-descr--item">
 							<img src="images/Delivery-descr/delivety-descr-4.png">
 							<p class="name">
@@ -311,12 +400,11 @@
 								И если что - для клиентов доступен чат и форум с нами и другими покупателями. Мы открыты и заботимся о вас! 
 							</p>
 						</div>
-
 					</div>
-				</div>
+
+				</div> <!-- .delivery-descr__wrap -->
 			</div> <!-- .row -->
 		</div> <!-- .container -->
-
 	</section>
 	<!-- End Delivery Description -->
 
@@ -326,11 +414,11 @@
 
 				<div class="order-wrap">
 
-					<div class="col-md-7 col-sm-7">
+					<div class="col-md-6 col-sm-6">
 						<div class="order-cell">
 
 		          <div class="order-btn ">
-		          	<a href="#" class="order-btn__green-col">заказать cЕБЕ</a>
+		          	<a href="#order" class="order-btn__green-col pop-up">заказать cЕБЕ</a>
 		          </div>
 
 	          	<ul class="order-list order-list__green-col">
@@ -343,12 +431,12 @@
 			      </div>
 					</div>
 
-					<div class="col-md-7 col-sm-7 xs-position">
+					<div class="col-md-6 col-sm-6 xs-position">
 						<div class="order-cell">
 							
 							<div class="gift-wrap">
 		            <div class="order-btn">
-			          	<a href="#" class="order-btn__blue-col">КУПИТЬ в подарок</a>
+			          	<a href="#order" class="order-btn__blue-col pop-up">КУПИТЬ в подарок</a>
 			          </div>
 		          </div>
 
@@ -370,7 +458,7 @@
 
 				</div> <!-- .order-wrap -->
 
-				<div class="col-md-14">
+				<div class="col-md-12">
 					<div class="price">
 						 <span class="price--numb">6900</span>
 						 <span class="price--valute">руб</span>
@@ -408,15 +496,438 @@
 					</div>
 				</div>
 
-
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section>
+
+	<section class="comments" id="comments">
+		<div class="col-md-12">
+			<h2 class="section-title">отзывы покупателей</h2>
+		</div>
+
+		<div class="col-md-12">
+			<p class="section-descr">
+				Кстати, это реальные люди, можете найти их и пообщаться! <br>
+				А еще можете оставить свой отзыв - и он обязательно будет опубликован
+			</p>
+		</div>
+		
+		<!-- Start Comments Items Block -->
+		<div class="comments-block">
+			<div class="container">
+				<div class="row">
+					
+					<div class="comments-block-wrap">
+						<div class="col-lg-3 col-md-6 col-sm-6">
+						  <div class="comments--item">
+						    <div class="image">
+						      <img src="images/Comments/Comments-1.jpg" alt="">
+						    </div>
+						    <blockquote>
+							    <cite class="name">Александра</cite>
+							    <p class="post">директор по маркетингу</p>
+							    <q class="short-quote">Идеальный сервис</q>
+							    <q class="text-quote">Очень рада, лалала, привезли на&nbsp;следующий день, курьер терпеливо ждал три часа, пока я&nbsp;мерила, все четко. И&nbsp;приятно что принимают карты! А&nbsp;комбез вообще бомба, закажу второй!</q>
+							  </blockquote>
+						  </div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6">
+						  <div class="comments--item">
+						    <div class="image">
+						      <img src="images/Comments/Comments-2.jpg" alt="">
+						    </div>
+						    <blockquote>
+							    <cite class="name">Китана</cite>
+							    <p class="post">специалист по переговорам</p>
+							    <q class="short-quote">Лучший комбез, что я видела</q>
+							    <q class="text-quote">Я работаю вышибалой и мне нужен был крепкий комбез - я нашла, что нужно!</q>
+							  </blockquote>
+						  </div>
+					  </div>
+				
+						<div class="col-lg-3 col-md-6 col-sm-6">
+						  <div class="comments--item">
+						    <div class="image">
+						      <img src="images/Comments/Comments-3.jpg" alt="">
+						    </div>
+						    <blockquote>
+							    <cite class="name">Александра</cite>
+							    <p class="post">директор по маркетингу</p>
+							    <q class="short-quote">Идеальный сервис</q>
+							    <q class="text-quote">Очень рада, лалала, привезли на&nbsp;следующий день, курьер терпеливо ждал три часа, пока я&nbsp;мерила, все четко. И&nbsp;приятно что принимают карты! А&nbsp;комбез вообще бомба, закажу второй!</q>
+							  </blockquote>
+						  </div>
+					  </div>
+				
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						  <div class="comments--item comments--item-plus">
+						  	<div class="image">
+						  		<a href="#comment" class="pop-up">
+						     		<img src="images/Comments/Comment-add.png" alt="Добавить отзыв">
+						      </a>
+						    </div>
+								<blockquote>
+							    <cite class="name">Добавить отзыв</cite>
+							    <q class="short-quote">Нажмите, чтобы добавить отзыв</q>
+							  </blockquote>
+
+						  </div>
+					  </div>
+				  </div>
+			  </div> <!-- .row -->
+			</div> <!-- .container -->
+
+		</div>
+
+	</section>
+
+	<section class="gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title">фото галлерея</h2>
+				</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<div class="gallery-item-wrap">	
+						<!-- Start First Row -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+									
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-1.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+
+									</div>
+
+									<img src="images/Gallery/Gallery-1.jpg" alt="">
+								
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-2.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-3.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-4.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- End First Row -->
+
+						<!-- Start Second Row -->
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-2.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-6.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-6.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-7.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-7.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6">
+							<div class="gallery-item">
+								<div class="gallery-item--img">
+
+									<div class="gallery-item--link">
+										<h5>Изображение</h5>
+										<a href="images/Gallery/Gallery-1.jpg" class="gallery-popup-link" title="Изображение 1">
+											<i class="demo-icon icon-eye"></i>
+										</a>
+									</div>
+
+									<img src="images/Gallery/Gallery-1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- End Second Row -->
+
+					</div>
+
+				</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section>
+
+	<section class="more-information">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-md-12">
+					<h2 class="section-title">Прочая информация</h2>
+				</div>
+
+				<!-- Start Accordion -->
+				<div class="col-md-12">
+					<div id="accordion" class="accordion">
+
+					  <h3 class="accordion--tite">Состав, размеры комбеза</h3>
+					  <div class="accordion--content">
+					  	<table class="accordion-table">
+					      <tr class="hidden-xs">
+					        <td rowspan="5" class="accordion-img"><img src="images/Accordion/Accordion-1.jpg"></td>
+					      </tr>
+					      <tr>
+					        <td>РАЗМЕР</td>
+					        <td>XS</td>
+					        <td>S</td>
+					        <td>M</td>
+					        <td>L</td>
+					      </tr>
+					      <tr>
+					        <td>рост</td>
+					        <td>158-168</td>
+					        <td>165-170</td>
+					        <td>168-177</td>
+					        <td>170-180</td>
+					      </tr>
+					      <tr>
+					        <td>талия</td>
+					        <td>53-59</td>
+					        <td>60-65</td>
+					        <td>65-73</td>
+					        <td>73-80</td>
+					      </tr>
+					      <tr>
+					        <td>бедра</td>
+					        <td>80-89</td>
+					        <td>90-95</td>
+					        <td>96-105</td>
+					        <td>106-115</td>
+					      </tr>
+					    </table> 
+					  </div>
+							
+						<h3 class="accordion--tite">Бесплатная доставка</h3>
+					  <div class="accordion--content">
+					  	<p>
+					  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  jrhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+					  	</p>
+					  </div>
+
+					  <h3 class="accordion--tite">Оплата и возврат денег</h3>
+					  <div class="accordion--content"></div>
+
+					  <h3 class="accordion--tite">Клуб клиентов K2 Fitness</h3>
+						<div class="accordion--content"></div>
+
+					</div>
+				</div>
+				<!-- End Accordion -->
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section>
+		
+	<section class="social">
+		<div class="container">
+			<div class="row">
+				<div class="social-wrap">
+					<div class="col-md-12">
+						<h2 class="social--title"> мы в соц сетях: </h2>
+
+						<ul>
+
+							<li>
+								<a href="#" class="ic-social-facebook" title="Facebook"></a>
+							</li>
+
+							<li>
+								<a href="#" class="ic-social-vk" title="Vkontakte"></a>
+							</li>
+
+							<li>
+								<a href="#" class="ic-social-instagram" title="Instagram"></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section>
+
+	<footer class="contacts" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="contacts--title"> 
+						Все еще остались вопросы? Задайте вопрос в чате или мессенджере
+						позвоните
+					</div>
+
+					<div class="contacts--phone">
+						7 (999) 111-10-10
+					</div>
+
+					<ul class="connect-prog">
+						<li>
+							<a href="#" class="connect-ic-whatsapp" title="WhatsApp"></a>
+						</li>
+
+						<li>
+							<a href="#" class="connect-ic-viber" title="Viber"></a>
+						</li>
+
+						<li>
+							<a href="#" class="connect-ic-telegram" title="Telegram"></a>
+						</li>
+
+						<li>
+							<a href="#" class="connect-ic-sms" title="SMS"></a>
+						</li>
+					</ul>
+
+					<div class="contacts--alt-phote-txt">
+						Или позвоните бесплатно по России:
+					</div>
+
+					<div class="contacts--alt-phote">
+						8-800-123-45-66
+					</div>
+					
+				</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</footer>
+
+	<div class="hidden">
+		<div class="order-form" id="order">
+			<h2>Заказ комбеза К2</h2>
+			<p>Мы перезвоним и ответим на все вопросы!</p>
+
+			<form method="post">
+				<div class="input-block">
+					<input type="text" placeholder="Как вас зовут">
+					<input type="text" placeholder="Город доставки">
+					<input type="text" placeholder="телефон">
+				</div>
+
+				<textarea placeholder="ВАШИ ПОЖЕЛАНИЯ (необязательно, можем уточнить по телефону)"></textarea>
+
+				<button class="button">Купить в подарок</button>
+			</form>
+		</div>
+	</div>
 	
-	<script src="libs/jquery/jquery.min.js"></script>
+	<div class="hidden">
+		<div class="order-form comment-form" id="comment">
+			<h2>Оставьте свой отзыв о работе магазина</h2>
+			<p>Мы заботимся о наших клиентах и улучшаем сервис обслуживания </p>
+
+			<form method="post">
+				<input type="text" placeholder="Как вас зовут">
+
+				<textarea placeholder="Текст отзыва"></textarea>
+
+				<button class="button">отправить</button>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/accordion/jquery-ui.js"></script>
+	<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/parallax/parallax.min.js"></script>
+	
+	
+	
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
-</html>
+</html>	
