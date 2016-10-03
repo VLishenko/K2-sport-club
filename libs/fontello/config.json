@@ -11,6 +11,24 @@
       "css": "right-circled",
       "code": 61609,
       "src": "fontawesome"
+    },
+    {
+      "uid": "55e2ff85b1c459c383f46da6e96014b0",
+      "css": "plus-1",
+      "code": 59393,
+      "src": "elusive"
+    },
+    {
+      "uid": "0fb1948386f4581c72424a69587e6471",
+      "css": "minus",
+      "code": 59392,
+      "src": "elusive"
+    },
+    {
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "eye",
+      "code": 59394,
+      "src": "fontawesome"
     }
   ]
 }
