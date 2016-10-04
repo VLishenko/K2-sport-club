@@ -27,6 +27,20 @@
 		margin-bottom: 4%;
 	}
  }
+
+ @media only screen and (max-height : 600px) and (max-width : 750px) {
+ 	.slider--title {
+ 		font-size: 40px	!important;
+ 		line-height: 40px !important;
+ 	}
+ }
+  @media only screen and (max-height : 600px) and (max-width : 550px) {
+ 	.slider--title {
+ 		font-size: 30px	!important;
+ 		line-height: 30px !important;
+ 	}
+ }
+
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -45,6 +59,11 @@
 	.specifics-item {
 		margin-bottom: 30px;
 	}
+	.specifics-item img {
+		max-width: 275px;
+		width: 100%;
+		height: auto;
+	}
 	.delivery-descr__wrap {
 		text-align: center;
 	}
@@ -56,8 +75,17 @@
 		width: 240px;
 	}
 	.order-form {
-		padding: 55px 20px 85px 20px;
+		/*padding: 55px 20px 85px 20px;*/
+		padding: 25px 20px 0px 20px;
+		min-height: 540px;
 	}
+	.order-form form {
+		margin-top: 25px;
+	}
+	.mfp-close {
+		font-size: 45px;
+	}
+
 	.input-block,
 	.order-form textarea {
 		width: 48%;
@@ -107,6 +135,7 @@
 	}
 	.slider--title__position {
 		margin-left: 33px;
+		padding-right: 33px;
 	}
 	.slider--p {
 		font-size: 15px;
@@ -114,25 +143,40 @@
 	}
 	.slick-active .slider--p__position {
 		left: 35px;
+		padding-right: 35px;
 		max-width: 100%;
-		padding-right: 10px;
 	}
 	.slider--btn__position {
 		margin-left: 38px;
 	}
-	.delivery {
-		padding-bottom: 16px;
-	}
+
 	.delivery-text {
-		margin: 22px 0 47px 10px;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 0 40px;
+		margin: 26px 0 40px 0;
 		letter-spacing: 2.2px;
+	}
+	.delivery {
+		padding-bottom: 23px;
+	}
+	.delivery-descr--item {
+		width: 100%;
+		padding: 0 20px;
+		margin-left: 0px;
+		margin-right: 0;
+	}
+	.delivery-descr--item p {
+		text-align: center;
+	}
+	.map-block {
+		padding: 0;
+		text-align: center;
 	}
 	.order-btn a {
 		width: 336px;
 		font-size: 48px;
-	}
-	.gift-wrap::after {
-		margin-left: 88px;
 	}
 	.order-list {
 		margin-left: 20px;	
@@ -192,10 +236,38 @@
 	.slider--p {
 		line-height: 21px;
 	}
+
+	.payments--item {
+		width: auto;
+	}
+	.order {
+		padding-bottom: 610px;
+	}
+	.order-wrap {
+		padding-top: 59px;
+	}
+	.payments {
+		text-align: center;
+	}
+	.xs-position {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	.xs-position .order-list{ 
+		max-width: 750px;
+		margin: auto;
+		margin-top: 31px;
+		padding-left: 30px;
+	 }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	.container {
+		width: 100%;
+	}
 	.container {
 		padding: 0 10px;
 	}
@@ -242,10 +314,7 @@
 	.order-button {
 		margin: auto;
 	}
-	.map-block {
-		padding: 0;
-		text-align: center;
-	}
+	
 	.map-img,
 	.partners-img img {
 		width: 100%;
@@ -254,45 +323,6 @@
 		margin-right: 0;
 	}
 
-	.delivery-text {
-		width: 100%;
-		margin: 0;
-		text-align: center;
-		padding: 0 40px;
-		margin: 26px 0 40px 0;
-	}
-	.delivery {
-		padding-bottom: 23px;
-	}
-	.delivery-descr--item {
-		width: 100%;
-		padding: 0 20px;
-		margin-left: 0px;
-		margin-right: 0;
-	}
-	.delivery-descr--item p {
-		text-align: center;
-	}
-	.payments {
-		text-align: center;
-	}
-	.payments--item {
-		width: auto;
-	}
-	.order {
-		padding-bottom: 650px;
-	}
-	.order-wrap {
-		padding-top: 59px;
-	}
-	.xs-position {
-		position: absolute;
-		bottom: 0;
-		margin-bottom: 0px;
-	}
-	.gift-wrap::after {
-		margin-left: 36%;
-	}
 	.order-list {
 		padding-right: 7px;
 	}
@@ -316,34 +346,44 @@
 	.order-form textarea {
 		width: 100%;
 	}
-	.order-form button {
+	/*.order-form button {
 		margin-top: 34px;
-	}
+	}*/
 
 	.slider--image {
-		width: 100%;
+		/*width: 100%;*/
 		text-align: center;
-	}
-	.slider--image img{
-		display: inline-block;
 	}
 
 	.slider--btn__position {
 		margin-bottom: 2%;
 	}
 	.slider--image img {
-		width: 100%;
+		display: inline-block;
+		/*width: 100%;*/
 		max-width: 341px;
 		height: auto;
 	}
 
-	.container {
-		width: 100%;
+	.order-form input {
+		height: 50px;
+		margin-bottom: 10px;
+	}
+	.order-form textarea {
+		height: 150px;
+		margin-bottom: 10px;
+	}
+	.order-form .button {
+		margin-bottom: 20px;
+	}
+	.gallery-item--link {
+		opacity: 1;
+		background: rgba(0, 0, 0, 0.6);
 	}
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 500px) {
 	/*body,
 	html {
 		overflow-x: hidden;
@@ -365,9 +405,6 @@
 	.delivery-text {
 		font-size: 32px;
 		margin: 26px 0 0px 0;
-	}
-	.gift-wrap::after {
-		margin-left: 20%;
 	}
 	.order-btn a {
 		width: 310px;
@@ -408,6 +445,19 @@
 	}
 	.drop-down-nav .logo__position {
 		margin-top: 17px;
+	}
+	.order {
+		padding-bottom: 650px;
+	}
+	.xs-position .order-list{
+		padding-left: 20px;
+	}
+	.slider--image {
+		width: 100%;
+		text-align: center;
+	}
+	.order-form textarea {
+		height: 200px;
 	}
 }
 
