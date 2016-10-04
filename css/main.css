@@ -209,20 +209,20 @@ h1 {
   .slider div[class*="slider-item-"] {
     position: relative;
     width: 100%;
-    height: 600px; }
+    max-height: 600px !important; }
   .slider--xs-title {
     position: absolute;
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
-    top: 0;
+    bottom: 0;
+    margin-bottom: 70px;
     padding: 4%;
     width: 100%;
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    margin-top: 334px;
-    left: -10%;
+    left: -15%;
     opacity: 0;
     -webkit-transition: all 0.4s ease 0.5s;
     -moz-transition: all 0.4s ease 0.5s;
@@ -230,35 +230,32 @@ h1 {
   .slider--image {
     position: absolute;
     top: 0;
-    right: -10%;
+    right: 15%;
     opacity: 0;
-    -webkit-transition: all 0.4s ease 0.5s;
-    -moz-transition: all 0.4s ease 0.5s;
-    transition: all 0.4s ease 0.5s; }
-    .slider--image img {
-      width: 100%;
-      max-width: 341px;
-      height: auto; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease; }
   .slider--title {
     position: absolute;
     color: #fff;
     font-family: BebasNeueCyrillic;
-    font-size: 74px;
+    font-size: 64px;
     line-height: 74px;
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 100%;
     opacity: 0;
-    -webkit-transition: all 0.4s ease 0.3s;
-    -moz-transition: all 0.4s ease 0.3s;
-    transition: all 0.4s ease 0.3s; }
+    -webkit-transition: all 0.5s ease 0.3s;
+    -moz-transition: all 0.5s ease 0.3s;
+    transition: all 0.5s ease 0.3s; }
     .slider--title__position {
-      bottom: 0;
-      margin-bottom: 42%;
+      top: 0;
       left: 40%;
-      margin-left: 60px; }
+      margin-left: 60px;
+      margin-top: 65px; }
   .slider--p {
     max-width: 485px;
+    width: 100%;
     color: #fff;
     font-family: HelveticaNeueCyr-Roman;
     font-size: 17px;
@@ -266,13 +263,14 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     opacity: 0;
-    -webkit-transition: all 0.4s ease 0.4s;
-    -moz-transition: all 0.4s ease 0.4s;
-    transition: all 0.4s ease 0.4s; }
+    -webkit-transition: all 0.5s ease 0.3s;
+    -moz-transition: all 0.5s ease 0.3s;
+    transition: all 0.5s ease 0.3s; }
     .slider--p__position {
       position: absolute;
-      margin-top: 345px;
-      left: -20%; }
+      left: -20%;
+      bottom: 0;
+      margin-bottom: 150px; }
   .slider--btn {
     position: absolute;
     bottom: 0;
@@ -280,9 +278,9 @@ h1 {
     left: 40%;
     margin-left: 60px;
     opacity: 0;
-    -webkit-transition: all 0.4s ease 0.4s;
-    -moz-transition: all 0.4s ease 0.4s;
-    transition: all 0.4s ease 0.4s; }
+    -webkit-transition: all 0.5s ease 0.3s;
+    -moz-transition: all 0.5s ease 0.3s;
+    transition: all 0.5s ease 0.3s; }
     .slider--btn a {
       display: inline-block;
       width: 139px;
@@ -308,6 +306,19 @@ h1 {
       background: #14a8e7;
       border: 1px solid rgba(255, 255, 255, 0.5);
       color: #ffffff; }
+
+.slick-active .slider--title, .slick-active .slider--btn {
+  left: 0;
+  opacity: 1; }
+.slick-active .slider--p {
+  left: 60px;
+  opacity: 1; }
+.slick-active .slider--image {
+  right: 0;
+  opacity: 1; }
+.slick-active .slider--xs-title {
+  left: 0;
+  opacity: 1; }
 
 section {
   width: 100%;
@@ -873,20 +884,6 @@ div [class*='connect-ic-'] {
     float: none; }
   .comment-form button {
     margin-top: 34px !important; }
-
-.slick-active .slider--title,
-.slick-active .slider--btn {
-  left: 0;
-  opacity: 1; }
-.slick-active .slider--p {
-  left: 60px;
-  opacity: 1; }
-.slick-active .slider--image {
-  right: 0;
-  opacity: 1; }
-.slick-active .slider--xs-title {
-  left: 0;
-  opacity: 1; }
 
 .h100p {
   height: 100%; }

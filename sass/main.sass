@@ -204,52 +204,51 @@ h1
 	div[class*="slider-item-"]
 		position: relative
 		width: 100%
-		height: 600px
+		max-height: 600px !important
 	
 	&--xs-title
 		position: absolute
 		text-align: center
 		background: rgba(0, 0, 0, 0.3)
-		top: 0
+		bottom: 0
+		margin-bottom: 70px
 		padding: 4%
 		width: 100%
 		font-size: 14px
 		text-transform: uppercase
 		color: #fff
 		text-align: center
-		margin-top: 334px
-		left: -10%
+		left: -15%
 		opacity: 0
 		+transition (all 0.4s ease .5s)
 
 	&--image
 		position: absolute
 		top: 0
-		right: -10%
+		right: 15%
 		opacity: 0
-		+transition (all 0.4s ease .5s)
-		img
-			width: 100%
-			max-width: 341px
-			height: auto
+		+transition (all 1s ease )
+
 	&--title
 		position: absolute
 		color: #fff
 		font-family: BebasNeueCyrillic
-		font-size: 74px
+		font-size: 64px
 		line-height: 74px
 		text-transform: uppercase
 		letter-spacing: 4px
 		width: 100%
 		opacity: 0
-		+transition (all 0.4s ease .3s)
+		+transition (all 0.5s ease .3s)
 		&__position
-			bottom: 0
-			margin-bottom: 42%
+			top: 0
 			left: 40%
 			margin-left: 60px
+			margin-top: 65px
+
 	&--p
 		max-width: 485px
+		width: 100%
 		color: #fff
 		font-family: HelveticaNeueCyr-Roman
 		font-size: 17px
@@ -257,11 +256,13 @@ h1
 		text-transform: uppercase
 		letter-spacing: 0.5px
 		opacity: 0
-		+transition (all 0.4s ease .4s)
+		+transition (all 0.5s ease .3s)
 		&__position
 			position: absolute
-			margin-top: 345px
+			// margin-top: 295px
 			left: -20%
+			bottom: 0
+			margin-bottom: 150px
 	&--btn
 		position: absolute
 		bottom: 0
@@ -269,7 +270,7 @@ h1
 		left: 40%
 		margin-left: 60px
 		opacity: 0
-		+transition (all 0.4s ease .4s)
+		+transition (all 0.5s ease .3s)
 		a
 			display: inline-block
 			width: 139px
@@ -293,7 +294,21 @@ h1
 			background: rgba(20,168,231,1)
 			border: 1px solid rgba(255,255,255,0.5)
 			color: #ffffff
-
+.slick-active
+	.slider
+		&--title,
+		&--btn
+			left: 0
+			opacity: 1
+		&--p
+			left: 60px
+			opacity: 1
+		&--image
+			right: 0
+			opacity: 1
+		&--xs-title
+			left: 0
+			opacity: 1
 
 
 
@@ -860,20 +875,7 @@ div [class*= 'connect-ic-']
 	button
 		margin-top: 34px !important
 		
-.slick-active
-	.slider--title,
-	.slider--btn
-		left: 0
-		opacity: 1
-	.slider--p
-		left: 60px
-		opacity: 1
-	.slider--image
-		right: 0
-		opacity: 1
-	.slider--xs-title
-		left: 0
-		opacity: 1
+
 
 .h100p
 	height: 100%

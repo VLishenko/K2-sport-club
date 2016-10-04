@@ -1,3 +1,25 @@
+//Slider Auto Height
+var topMargin = 0; //Default margin
+
+function height_Detect( myObject, topMargin ) {
+	//myObject - height of our block
+	//topMargin - Margin
+	topMargin = topMargin || 0; //Deafult Margin
+
+	var windowHeight = parseInt($(window).height()), //Detect window height
+			blochHeight = windowHeight - topMargin; // Height of the Navigation
+
+	if (windowHeight <= 480) { //Window height leth than 480px
+		myObject.css("height", 480 - topMargin);
+	} else if (windowHeight > 700){ //Window height more than 700px
+		myObject.css("height", 700 - topMargin);
+	} else {
+		myObject.css("height", windowHeight-topMargin); //Window height between 480px and 700px
+	}
+};
+
+height_Detect($('div[class*="slider-item-"]'), 110);
+
 
 //Scroll to Id
 $("a[href*='#']").mPageScroll2id({
@@ -80,11 +102,11 @@ $( "#accordion" ).accordion({
 
 //Blocks animation
 $(".gallery-item--img").animated("pulse", "fadeOut");
-$(".specifics-item").animated("fadeIn", "fadeOut");
-$(".comments--item").animated("fadeInUp", "fadeOut");
-$(".delivery-descr--item").animated("flipInY", "fadeOut");
+// $(".specifics-item").animated("fadeIn", "fadeOut");
+// $(".comments--item").animated("fadeInUp", "fadeOut");
+// $(".delivery-descr--item").animated("flipInY", "fadeOut");
 $(".section-title").animated("fadeInDown", "fadeOut");
-$(".section-descr").animated("fadeInUp", "fadeOut");
+// $(".section-descr").animated("fadeInUp", "fadeOut");
 
 //Pop-up	
 $(".pop-up").magnificPopup({type:"inline", midClick: true});		
@@ -98,15 +120,24 @@ $('.gallery-popup-link').magnificPopup({
 $('.social').parallax({imageSrc: 'img/social-bg-lg.jpg'});
 
 //Drop Down Navigation
-$(window).scroll(function(){
-var offset = document.documentElement.scrollTop,
-		myObject = $(".drop-down-nav");
+// $(window).scroll(function(){
+// var offset = document.documentElement.scrollTop,
+// 		myObject = $(".drop-down-nav");
 
-	if ((offset > 270) || $('body').scrollTop() > 270) { 
-	myObject.slideDown();
-	myObject.removeClass("hidden")
-	} else {
-		  myObject.slideUp();
-			myObject.addClass("hidden")
-		}
-});
+// 	if ((offset > 270) || $('body').scrollTop() > 270) { 
+// 	myObject.slideDown();
+// 	myObject.removeClass("hidden")
+// 	} else {
+// 		  myObject.slideUp();
+// 			myObject.addClass("hidden")
+// 		}
+// });
+
+jQuery(function(f){
+	var element = f('.drop-down-nav');
+	element.hide();
+	f(window).scroll(function(){
+		element['fade'+ (f(this).scrollTop() > 400 ? 'In': 'Out')](200);           
+	});
+});  
+
