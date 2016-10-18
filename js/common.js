@@ -18,11 +18,11 @@ function height_Detect( myObject, topMargin ) {
 	}
 };
 
-height_Detect($('div[class*="slider-item-"]'), 110);
+height_Detect($('div[class*="slider-item-"]'), 110);	
 
 
 //Scroll to Id
-$("a[href*='#']").mPageScroll2id({
+$(".scroll-to-id").mPageScroll2id({
 	offset: 75,
 });
 //Droped Menu
