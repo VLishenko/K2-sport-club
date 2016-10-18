@@ -41,6 +41,15 @@
  	}
  }
 
+@media only screen and (max-height : 400px) {
+	.small-height li {
+		display: inline-block;
+		width: 49%;
+	}
+	li.small-height-w100 {
+		width: 100%;
+	}
+}
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -81,6 +90,7 @@
 	}
 	.order-form form {
 		margin-top: 25px;
+		padding-bottom: 25px;
 	}
 	.mfp-close {
 		font-size: 45px;
@@ -380,6 +390,15 @@
 		opacity: 1;
 		background: rgba(0, 0, 0, 0.6);
 	}
+
+	#add-contacts .contacts--alt-phote-txt,
+	#add-contacts .contacts--title {
+		font-size: 30px;
+	}
+	#add-contacts .contacts--alt-phote, 
+	#add-contacts .contacts--phone {
+		font-size: 32px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -395,7 +414,7 @@
 		font-size: 22px;
 	}
 	.order-button--link {
-		width: 160px;
+		width: 100px;
 		height: 87px;
 	}
 	.slider-item-1 {

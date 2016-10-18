@@ -62,7 +62,7 @@ h1
 	height: 85px
 	z-index: 10
 .logo
-	text-align: right
+	text-align: center
 	+transition (all 0.4s ease)
 	a
 		margin-right: 34px
@@ -132,16 +132,24 @@ h1
 	+transition (all 0.4s ease)
 
 	&--link
-		display: table-cell
-		vertical-align: middle
 		width: 178px
 		height: 93px
 		background: linear-gradient(to top, #4c851f 0%, #4c851f 42%, #65b029 66%, #85ea37 100%)
-		//background-image: linear-gradient(to top, #2c4990 0%, #456fbb 48%, #5f97e6 79%, #5f97e6 100%)
 		border: 5px solid #fdfcfc
 		border-radius: 16px
-		text-align: center
-		vertical-align: middle
+		display: -webkit-box
+		display: -webkit-flex
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-box-pack: center
+		-webkit-justify-content: center
+		-ms-flex-pack: center
+		justify-content: center
 		+transition (all 0.4s ease)
 		span
 			color: #fff
@@ -149,9 +157,10 @@ h1
 			font-size: 38px
 			font-weight: 400
 			letter-spacing: 2px
+			line-height: 38px	
 			+transition (all 0.4s ease)
 		&:hover
-			margin-top: 36px
+			margin-top: 0px
 	&__position
 		position: absolute
 		display: inline-block
@@ -215,6 +224,9 @@ h1
 .slider
 	background-image: url(../images/Slider/Slider-bg.jpg)
 	background-position: center
+	.container
+		padding: 0
+
 	div[class*="slider-item-"]
 		position: relative
 		width: 100%
@@ -223,15 +235,15 @@ h1
 	&--xs-title
 		position: absolute
 		text-align: center
-		background: rgba(0, 0, 0, 0.3)
+		background: rgba(1, 15, 69, 0.9)
 		bottom: 0
-		margin-bottom: 70px
+		margin-bottom: 30px
 		padding: 4%
 		width: 100%
-		font-size: 14px
+		font-size: 21px
 		text-transform: uppercase
 		color: #fff
-		text-align: center
+		text-align: left
 		left: -15%
 		opacity: 0
 		+transition (all 0.4s ease .5s)
@@ -399,8 +411,19 @@ section
 //Delivery Description
 .delivery-descr
 	background-color: #eee
+	img
+		&:hover
+			-webkit-transition: all 1s ease-in-out
+			-moz-transition: all 1s ease-in-out
+			-o-transition: all 1s ease-in-out
+			transition: all 1s ease-in-out
+			-webkit-transform: rotate(360deg)
+			-moz-transform: rotate(360deg)
+			-o-transform: rotate(360deg)
+			transform: rotate(360deg)
+			cursor: default
+
 	&__wrap
-		// text-align: justify
 		margin-top: 30px
 	&--item
 		text-align: center
@@ -564,6 +587,14 @@ blockquote,
 		font-family: "HelveticaNeueCyr-Roman"
 		font-style: normal
 		letter-spacing: 1px
+		line-height: 30px
+		-webkit-transition: all 0.2s ease-in-out
+		-moz-transition: all 0.2s ease-in-out
+		-o-transition: all 0.2s ease-in-out
+		transition: all 0.2s ease-in-out
+		cursor: default
+		&:hover
+			font-size: 25px
 	.post
 		margin-top: 6px
 		letter-spacing: 0.6px
@@ -621,7 +652,6 @@ blockquote,
 		z-index: 2
 		text-align: center
 		width: 100%
-		padding: 0 5px	
 		background: rgba(0,0,0,0.8)
 		-webkit-transition: all 0.4s ease-in-out
 		-moz-transition: all 0.4s ease-in-out
@@ -638,7 +668,10 @@ blockquote,
 		margin-top: 20px
 	a	
 		color: #fff
-
+.gallery-popup-link 
+	display: inline-block
+	width: 100%
+	height: 100%
 //More information
 .more-information
 	background-color: #eeeeee
@@ -750,7 +783,10 @@ div [class*="ic-social-"]
 	background-position: -80px 0
 .ic-social-instagram
 	background-position: -170px 0
-
+.social
+	min-height: 420px
+	background: url(../img/social-bg-lg.jpg) #272324 no-repeat center center fixed
+	
 //Footer
 .contacts
 	padding: 0 5px
@@ -785,7 +821,8 @@ div [class*="ic-social-"]
 	li
 		display: inline-block
 		width: 90px
-div [class*= 'connect-ic-']
+div[class*= 'connect-ic-'],
+a[class*= 'connect-ic-']
 	display: inline-block
 	width: 66px
 	height: 67px
@@ -839,7 +876,7 @@ div [class*= 'connect-ic-']
 		border-radius: 10px
 		height: 65px
 		color: #878484
-		font-family: BebasNeueCyrillic
+		font-family: "HelveticaNeueCyr-Bold"
 		font-size: 25px
 		line-height: 30px
 		padding: 0 23px
@@ -852,8 +889,8 @@ div [class*= 'connect-ic-']
 		border-radius: 10px
 		vertical-align: top
 		color: #878484
-		font-family: BebasNeueCyrillic
-		text-transform: uppercase
+		font-family: "HelveticaNeueCyr-Bold"
+		// text-transform: uppercase
 		font-size: 31px
 		padding: 10px 23px
 		resize: vertical
@@ -898,7 +935,7 @@ div [class*= 'connect-ic-']
 
 .drop-down-nav
 	display: none
-	background-color: rgba(255,255,255,0.7)
+	background-color: rgba(255,255,255,1)
 	width: 100%
 	position: fixed
 	top: 0
@@ -911,9 +948,39 @@ div [class*= 'connect-ic-']
 	.order-button
 		margin: 4px auto 0px auto
 	.order-button--link
-		height: 50px
+		height: 64px
 	.hidden-navigation__position
 		margin-top: 12px
 	.hidden-navigation-list__position
 		position: fixed
 		top: 81px
+	&--contacts
+		margin-top: 40px
+		.contacts--phone,
+		.contacts--alt-phote
+			font-size: 24px
+			line-height: 24px
+			margin-top: 0
+			color: #1760a6
+		.contacts--alt-phote
+			margin-top: -10px
+		.contacts--phone 
+			font-family: "HelveticaNeueCyr-Bold"
+		.connect-prog
+			transform: scale(.6)
+			margin-top: -10px
+		.contacts--alt-phote-txt
+			font-size: 21px
+			line-height: 21px
+			margin: 0	
+
+.mfp-close
+	font-size: 45px
+
+#add-contacts
+	padding-bottom: 20px
+	text-align: center
+	background-image: linear-gradient(to top, #d5d5d5 0%, #fefefd 100%)
+
+.color-blue
+	color: #4b7adc

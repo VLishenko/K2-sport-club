@@ -103,8 +103,8 @@ $( "#accordion" ).accordion({
 //Blocks animation
 $(".gallery-item--img").animated("pulse", "fadeOut");
 // $(".specifics-item").animated("fadeIn", "fadeOut");
-// $(".comments--item").animated("fadeInUp", "fadeOut");
-// $(".delivery-descr--item").animated("flipInY", "fadeOut");
+$(".comments--item .image").animated("fadeIn", "fadeOut");
+$(".delivery-descr--item img").animated("fadeIn", "fadeOut");
 $(".section-title").animated("fadeInDown", "fadeOut");
 // $(".section-descr").animated("fadeInUp", "fadeOut");
 
@@ -117,21 +117,8 @@ $('.gallery-popup-link').magnificPopup({
 });
 
 //Parallax in Social Block
-$('.social').parallax({imageSrc: 'img/social-bg-lg.jpg'});
+$('.social').parallax({imageSrc: 'img/social-bg-lg.jpg'}).trigger('resize').trigger('scroll');
 
-//Drop Down Navigation
-// $(window).scroll(function(){
-// var offset = document.documentElement.scrollTop,
-// 		myObject = $(".drop-down-nav");
-
-// 	if ((offset > 270) || $('body').scrollTop() > 270) { 
-// 	myObject.slideDown();
-// 	myObject.removeClass("hidden")
-// 	} else {
-// 		  myObject.slideUp();
-// 			myObject.addClass("hidden")
-// 		}
-// });
 
 jQuery(function(f){
 	var element = f('.drop-down-nav');
@@ -141,3 +128,5 @@ jQuery(function(f){
 	});
 });  
 
+
+$(window).trigger('resize').trigger('scroll');
