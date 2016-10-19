@@ -39,7 +39,7 @@ html
 input,
 textarea,
 button 
-	outline: none
+	outline: none !important
 
 a:hover,
 a:visited,
@@ -47,7 +47,7 @@ a:link,
 a:active 
 	text-decoration: none
 a
-	outline: none
+	outline: none !important
 body
 	background-color: #fff
 	font-family: "HelveticaNeueCyr-Roman"
@@ -128,9 +128,9 @@ h1
 			background-position: -111px 0
 
 .order-button
-	display: table
+	// display: table
 	+transition (all 0.4s ease)
-
+	
 	&--link
 		width: 178px
 		height: 93px
@@ -150,6 +150,7 @@ h1
 		-webkit-justify-content: center
 		-ms-flex-pack: center
 		justify-content: center
+		text-align: center
 		+transition (all 0.4s ease)
 		span
 			color: #fff
@@ -166,12 +167,71 @@ h1
 		display: inline-block
 		margin-top: 33px
 		float: right
-		right: 0
+		right: 8px
 		z-index: 2
 		+transition (all 0.4s ease)	
 		&:hover
 			padding-top: 5px
-		
+	&__bg
+		position: absolute
+		background-color: rgba(255, 255, 255, 0.4)
+		display: inline-block
+		width: 100%
+		max-width: 194px
+		height: 160px
+		top: 0
+		right: 0
+		border-radius: 20px
+		.order-button-phone
+			&__position
+				top: 32px
+				right: -60px
+	&--phone
+		position: absolute
+		text-align: center
+		width: 100%
+		color: #4E7BDC
+		&__sm
+			bottom: 5px
+			font-size: 19px
+			color: #F5F8FF
+		&__lg
+			top: 4px
+			font-size: 21px
+			font-family: "HelveticaNeueCyr-Bold"
+	&--cont-list
+		width: 200%
+		position: absolute
+		left: 80px
+		top: 4px
+		transform: scale(.6)
+		z-index: 2
+.order-button-phone
+	position: absolute
+	font-size: 41px
+	color: #4E7BDC
+	a
+		+transition (all 0.4s ease)
+.navigation-contacts
+	position: absolute
+	z-index: 2
+	right: -40px
+	top: 10px
+	&--phone-lg,
+	&--phone-sm
+		color: #4E7BDC
+		font-size: 18px
+	&--phone-lg
+		font-family: "HelveticaNeueCyr-Bold"
+	.connect-prog
+		position: absolute
+		transform: scale(.6)
+		width: 270%
+		top: -29px
+		right: -312px
+		+transition (all 0.4s ease)	
+.order-button-phone
+	z-index: 2
 .hidden-navigation
 	&__position
 		float: right
@@ -270,7 +330,7 @@ h1
 			top: 0
 			left: 40%
 			margin-left: 60px
-			margin-top: 65px
+			margin-top: 100px
 
 	&--p
 		max-width: 485px
@@ -884,7 +944,7 @@ a[class*= 'connect-ic-']
 	textarea
 		display: inline-block
 		width: 422px
-		height: 266px
+		height: 220px
 		background-color: #fefeff
 		border-radius: 10px
 		vertical-align: top
@@ -947,15 +1007,15 @@ a[class*= 'connect-ic-']
 		margin: 0
 	.order-button
 		margin: 4px auto 0px auto
-	.order-button--link
-		height: 64px
+		&--link
+			height: 64px
 	.hidden-navigation__position
 		margin-top: 12px
 	.hidden-navigation-list__position
 		position: fixed
 		top: 81px
 	&--contacts
-		margin-top: 40px
+		margin-top: 20px
 		.contacts--phone,
 		.contacts--alt-phote
 			font-size: 24px
@@ -973,6 +1033,11 @@ a[class*= 'connect-ic-']
 			font-size: 21px
 			line-height: 21px
 			margin: 0	
+	.order-button-phone__position
+		right: -50px
+		top: 9px
+.drop-down-nav--contacts a:hover
+	border-bottom: none
 
 .mfp-close
 	font-size: 45px

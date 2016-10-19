@@ -1,5 +1,5 @@
 /*==========  Slider Height  ==========*/
-@media only screen and (max-height : 600px) {
+@media only screen and (max-height : 760px) {
 	.slider--p__position {
 		margin-bottom: 110px
 	}
@@ -11,23 +11,33 @@
 	.slider--p {
 		font-size: 14px;
 	}
+/*	.drop-down-nav--contacts {
+		display: none;
+	}*/
  }
 
- @media only screen and (max-height : 500px) {
+ @media only screen and (max-height : 550px) {
  	.slider--title {
 		font-size: 44px;
 		padding-right: 0;
 	}
+	.slider--title__position {
+		margin-top: 80px;
+	}
 
 	.slider--p {
 		font-size: 14px;
-		margin-bottom: 15%;
+		margin-bottom: 10%;
 	}
 	.slider--btn {
 		margin-bottom: 4%;
 	}
  }
-
+@media only screen and (max-height : 500px) and (max-width : 1200px) {
+	.slider--title__position {
+		margin-top: 80px !important;
+	}
+}
  @media only screen and (max-height : 600px) and (max-width : 750px) {
  	.slider--title {
  		font-size: 40px	!important;
@@ -52,6 +62,18 @@
 }
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (max-width : 1620px) {
+	.order-button--cont-list {
+		width: 50%;
+		left: 176px;
+		margin-top: -10px;
+	}
+}
+@media only screen and (max-width : 1320px) {
+	.order-button__bg {
+		right: 44px;
+	}
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	/*Main Header*/
@@ -84,8 +106,7 @@
 		width: 240px;
 	}
 	.order-form {
-		/*padding: 55px 20px 85px 20px;*/
-		padding: 25px 20px 0px 20px;
+		padding: 35px 20px 0px 20px;
 		min-height: 540px;
 	}
 	.order-form form {
@@ -111,28 +132,44 @@
 		line-height: 44px;
 	}
 	.slider--title__position {
+		margin-top: 150px;
+	}
 
+	.order-button--cont-list {
+		left: 17	2px;
+	}
+
+	.navigation-contacts {
+		right: -70px;
+	}
+	.navigation-contacts .connect-prog {
+		-webkit-transform: scale(0.5);
+		    -ms-transform: scale(0.5);
+		        transform: scale(0.5);
+		width: 271%;
+		right: -284px;
 	}
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
 	/*Main Header*/
 	.main-header {
 		height: 100px;
 	}
 	.order-button__position {
 		margin: auto;
-		padding-right: 25px;
-		margin-top: 17px;
 	}
 	.order-button__position:hover {
-		margin-top: 21px;
+		margin-top: 1px
+	}
+	.drop-down-nav .order-button__position:hover {
+		margin-top: 3px;
 	}
 	.logo__position {
 		margin-top: 15px;
-		margin-left: 12px;
+		margin-right: 12px;
 	}
 
 	/*Slider*/
@@ -226,7 +263,7 @@
 	}
 	.contacts--title {
 		font-size: 31px;
-		margin-top: 44px;
+		margin-top: 10px;
 	}
 	.contacts--phone {
 		font-size: 57px;
@@ -241,7 +278,7 @@
 	}
 	.slider--title {
 		line-height: 50px;
-		margin-top: 39px;	
+		margin-top: 100px;	
 	}
 	.slider--p {
 		line-height: 21px;
@@ -255,6 +292,7 @@
 	}
 	.order-wrap {
 		padding-top: 59px;
+		width: 100%;
 	}
 	.payments {
 		text-align: center;
@@ -271,6 +309,14 @@
 		margin-top: 31px;
 		padding-left: 30px;
 	 }
+	.order-button__bg {
+		position: static;
+		height: auto;
+		background-color: transparent;
+	}
+	.main-header .hidden-navigation-list__position {
+		padding-left: 50px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -399,6 +445,9 @@
 	#add-contacts .contacts--phone {
 		font-size: 32px;
 	}
+	.hidden-navigation-list__position {
+		padding-left: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -477,6 +526,13 @@
 	}
 	.order-form textarea {
 		height: 200px;
+	}
+	.order-button__bg .order-button-phone__position,
+	.drop-down-nav .order-button-phone__position {
+		right: -40px;
+	}
+	.contacts--title {
+		margin-top: 35px;
 	}
 }
 
